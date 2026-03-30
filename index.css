@@ -1,0 +1,78 @@
+/* index.css - 新版（已針對學校島 hover 優化） */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+:root {
+    --primary: #5b9cf0;
+}
+
+body {
+    font-family: 'Nunito', system-ui, sans-serif;
+}
+
+.sky-bg {
+    background: linear-gradient(180deg, #4a9cff 0%, #7b5cff 35%, #a45cff 100%);
+    animation: skyShift 25s ease infinite;
+}
+
+@keyframes skyShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.cloud {
+    animation: floatCloud 22s linear infinite;
+}
+
+@keyframes floatCloud {
+    0% { transform: translateX(-150px); }
+    100% { transform: translateX(1300px); }
+}
+
+.sparkle {
+    animation: sparkleAnim 1.8s ease-in-out infinite;
+}
+
+@keyframes sparkleAnim {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.archipelago {
+    filter: drop-shadow(0 30px 30px rgba(255,255,255,0.4));
+}
+
+.island-3d {
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 
+        0 25px 30px -10px rgba(0,0,0,0.3),
+        0 15px 20px rgba(255,255,255,0.4),
+        inset 0 10px 15px rgba(255,255,255,0.5);
+}
+
+/* 全新 hover 效果：整體更溫和，尤其是學校島（底部）不會再大幅移動 */
+.island-3d:hover {
+    transform: scale(1.08) translateY(-6px);   /* 縮小幅度 + 移除 rotate */
+    box-shadow: 
+        0 35px 40px -15px rgba(255,255,255,0.6),
+        0 20px 25px rgba(0,0,0,0.25);
+}
+
+/* 學校島底部位置 hover 更穩定 */
+.school-island:hover {
+    transform: translateX(-50%) scale(1.04) translateY(-3px);
+}
+
+.bridge {
+    filter: drop-shadow(0 0 15px #fff);
+    animation: bridgeGlow 2.5s ease-in-out infinite;
+}
+
+.ocean {
+    animation: wave 3.5s ease-in-out infinite;
+}
+
+.top-bar {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+}
