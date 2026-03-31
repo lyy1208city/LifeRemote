@@ -29,10 +29,10 @@ function renderIndex() {
         <div class="relative mx-auto mt-24 island-stage">
             
             <!-- 中央海洋 -->
-            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#3b8cff] rounded-full ocean shadow-[0_0_80px_#3b8cff,inset_0_30px_40px_rgba(255,255,255,0.3)] flex items-center justify-center border-[14px] border-white/30">
+            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-60 md:w-96 md:h-96 bg-[#3b8cff] rounded-full ocean shadow-[0_0_80px_#3b8cff,inset_0_30px_40px_rgba(255,255,255,0.3)] flex items-center justify-center border-[14px] border-white/30">
                 <div class="text-center">
-                    <div class="text-white text-5xl font-bold drop-shadow-xl">🌊</div>
-                    <div class="text-white/90 text-xl font-bold tracking-widest mt-1">LifeRemote Hub</div>
+                    <div class="text-white text-4xl md:text-5xl font-bold drop-shadow-xl">🌊</div>
+                    <div class="text-white/90 text-base md:text-xl font-bold tracking-widest mt-1">LifeRemote Hub</div>
                 </div>
             </div>
 
@@ -48,26 +48,26 @@ function renderIndex() {
 
             <!-- 公司島 -->
             <div onclick="goToProfileWithMode('company')" 
-                 class="island-3d absolute left-[12%] top-[22%] w-48 h-52 bg-gradient-to-b from-[#7cffb8] via-[#4ade80] to-[#e8b38f] rounded-[42px] cursor-pointer flex flex-col items-center justify-center border-8 border-white/70 overflow-hidden">
-                <div class="w-40 h-28 bg-[#4ade80] rounded-3xl mt-3 flex items-center justify-center text-7xl shadow-inner">🏢</div>
-                <div class="mt-4 text-3xl font-bold text-white drop-shadow-md">公司</div>
-                <div class="absolute top-6 left-6 bg-white text-emerald-700 text-xs font-bold px-4 py-1 rounded-3xl shadow">7日</div>
+                 class="island-3d absolute left-[12%] top-[22%] w-32 h-36 md:w-48 md:h-52 bg-gradient-to-b from-[#7cffb8] via-[#4ade80] to-[#e8b38f] rounded-[42px] cursor-pointer flex flex-col items-center justify-center border-8 border-white/70 overflow-hidden">
+                <div class="w-28 h-20 md:w-40 md:h-28 bg-[#4ade80] rounded-3xl mt-3 flex items-center justify-center text-5xl md:text-7xl shadow-inner">🏢</div>
+                <div class="mt-3 md:mt-4 text-xl md:text-3xl font-bold text-white drop-shadow-md">公司</div>
+                <div class="absolute top-4 left-4 md:top-6 md:left-6 bg-white text-emerald-700 text-[10px] md:text-xs font-bold px-3 py-1 rounded-3xl shadow">7日</div>
             </div>
 
             <!-- 銀行島 -->
             <div onclick="goToProfileWithMode('bank')" 
-                 class="island-3d absolute right-[12%] top-[22%] w-48 h-52 bg-gradient-to-b from-[#7cffb8] via-[#4ade80] to-[#e8b38f] rounded-[42px] cursor-pointer flex flex-col items-center justify-center border-8 border-white/70 overflow-hidden">
-                <div class="w-40 h-28 bg-[#4ade80] rounded-3xl mt-3 flex items-center justify-center text-7xl shadow-inner">🏦</div>
-                <div class="mt-4 text-3xl font-bold text-white drop-shadow-md">銀行</div>
-                <div class="absolute top-6 right-6 bg-white text-cyan-700 text-xs font-bold px-4 py-1 rounded-3xl shadow">7日</div>
+                 class="island-3d absolute right-[12%] top-[22%] w-32 h-36 md:w-48 md:h-52 bg-gradient-to-b from-[#7cffb8] via-[#4ade80] to-[#e8b38f] rounded-[42px] cursor-pointer flex flex-col items-center justify-center border-8 border-white/70 overflow-hidden">
+                <div class="w-28 h-20 md:w-40 md:h-28 bg-[#4ade80] rounded-3xl mt-3 flex items-center justify-center text-5xl md:text-7xl shadow-inner">🏦</div>
+                <div class="mt-3 md:mt-4 text-xl md:text-3xl font-bold text-white drop-shadow-md">銀行</div>
+                <div class="absolute top-4 right-4 md:top-6 md:right-6 bg-white text-cyan-700 text-[10px] md:text-xs font-bold px-3 py-1 rounded-3xl shadow">7日</div>
             </div>
 
             <!-- 學校島 -->
             <div onclick="goToProfileWithMode('school')" 
-                 class="island-3d school-island absolute left-1/2 bottom-[18%] -translate-x-1/2 w-48 h-52 bg-gradient-to-b from-[#7cffb8] via-[#4ade80] to-[#e8b38f] rounded-[42px] cursor-pointer flex flex-col items-center justify-center border-8 border-white/70 overflow-hidden">
-                <div class="w-40 h-28 bg-[#4ade80] rounded-3xl mt-3 flex items-center justify-center text-7xl shadow-inner">🏫</div>
-                <div class="mt-4 text-3xl font-bold text-white drop-shadow-md">學校</div>
-                <div class="absolute top-6 left-1/2 -translate-x-1/2 bg-white text-violet-700 text-xs font-bold px-4 py-1 rounded-3xl shadow">7日</div>
+                 class="island-3d school-island absolute left-1/2 bottom-[18%] -translate-x-1/2 w-32 h-36 md:w-48 md:h-52 bg-gradient-to-b from-[#7cffb8] via-[#4ade80] to-[#e8b38f] rounded-[42px] cursor-pointer flex flex-col items-center justify-center border-8 border-white/70 overflow-hidden">
+                <div class="w-28 h-20 md:w-40 md:h-28 bg-[#4ade80] rounded-3xl mt-3 flex items-center justify-center text-5xl md:text-7xl shadow-inner">🏫</div>
+                <div class="mt-3 md:mt-4 text-xl md:text-3xl font-bold text-white drop-shadow-md">學校</div>
+                <div class="absolute top-4 left-1/2 -translate-x-1/2 bg-white text-violet-700 text-[10px] md:text-xs font-bold px-3 py-1 rounded-3xl shadow">7日</div>
             </div>
         </div>
 
