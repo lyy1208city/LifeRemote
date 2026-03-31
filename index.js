@@ -5,10 +5,10 @@ function renderIndex() {
     
     content.innerHTML = `
         <!-- Top Bar -->
-        <div class="top-bar fixed top-4 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between w-[92%] max-w-7xl mx-auto px-8 py-3 rounded-3xl text-white shadow-2xl">
+        <div class="top-bar fixed top-4 left-1/2 -translate-x-1/2 z-50 flex flex-col gap-4 md:flex-row md:items-center md:justify-between w-[92%] max-w-7xl mx-auto px-6 py-4 rounded-3xl text-white shadow-2xl">
 
             <!-- 右側金幣 + 個人檔案 -->
-            <div class="flex items-center gap-6">
+            <div class="flex flex-wrap items-center gap-3 md:gap-6">
                 <div class="flex items-center gap-2 bg-white/20 px-5 py-2 rounded-3xl">
                     <span class="text-3xl">💰</span>
                     <span id="moneyDisplay" class="font-mono font-bold text-2xl">${user.money}</span>
@@ -26,7 +26,7 @@ function renderIndex() {
         </div>
 
         <!-- 主島嶼區域 -->
-        <div class="relative mx-auto mt-24" style="width: 860px; height: 620px;">
+        <div class="relative mx-auto mt-24 island-stage">
             
             <!-- 中央海洋 -->
             <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#3b8cff] rounded-full ocean shadow-[0_0_80px_#3b8cff,inset_0_30px_40px_rgba(255,255,255,0.3)] flex items-center justify-center border-[14px] border-white/30">

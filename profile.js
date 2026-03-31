@@ -7,7 +7,7 @@ function renderProfile() {
     const content = document.getElementById('profileContent');
     content.innerHTML = `
         <div class="max-w-4xl mx-auto px-6 py-8">
-            <div class="flex justify-between items-center mb-10">
+            <div class="flex flex-col gap-6 md:flex-row md:justify-between md:items-center mb-10">
                 <div class="flex items-center gap-3">
                     <div class="text-4xl">👤</div>
                     <h1 class="text-4xl font-bold">個人檔案</h1>
@@ -19,7 +19,7 @@ function renderProfile() {
                 </button>
             </div>
 
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- 左：資料 -->
                 <div class="card bg-white/10 backdrop-blur-2xl rounded-3xl p-8 border border-white/30">
                     <div class="flex items-center gap-6 mb-8">

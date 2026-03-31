@@ -76,3 +76,45 @@ body {
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(12px);
 }
+
+.island-stage {
+    width: min(100%, 860px);
+    max-width: 860px;
+    aspect-ratio: 860 / 620;
+    margin: 0 auto;
+    position: relative;
+}
+
+.island-stage svg {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        width: calc(100% - 24px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .top-bar .flex.items-center.gap-6,
+    .top-bar .flex.flex-wrap.items-center.gap-3 {
+        justify-content: center;
+    }
+
+    .island-stage {
+        width: calc(100vw - 24px);
+    }
+
+    .cloud,
+    .sparkle {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar {
+        top: 0.75rem;
+        padding: 0.9rem 1rem;
+    }
+}

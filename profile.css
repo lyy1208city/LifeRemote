@@ -16,3 +16,33 @@ body {
     0% { transform: scale(0.8); opacity: 0; }
     100% { transform: scale(1); opacity: 1; }
 }
+
+@media (max-width: 768px) {
+    .max-w-4xl {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .grid.grid-cols-1 {
+        grid-template-columns: 1fr;
+    }
+    .flex.flex-col.gap-6.md\:flex-row.md\:justify-between.md\:items-center {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-4xl {
+        font-size: 2rem;
+    }
+    .text-3xl {
+        font-size: 1.75rem;
+    }
+    .text-2xl {
+        font-size: 1.25rem;
+    }
+}
