@@ -31,14 +31,25 @@ function renderProfile() {
                                 <div>💰 <span id="money" class="font-mono font-bold">${user.money}</span></div>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-3 text-base md:text-lg mt-6">
-                                <div>專注力 <span id="focus" class="font-mono font-bold">${user.focus}</span></div>
-                                <div>體力 <span id="stamina" class="font-mono font-bold">${user.stamina}</span></div>
-                                <div>知識 <span id="knowledge" class="font-mono font-bold">${user.knowledge}</span></div>
-                                <div>親和力 <span id="affinity" class="font-mono font-bold">${user.affinity}</span></div>
-                                <div>社交力 <span id="social" class="font-mono font-bold">${user.social}</span></div>
-                                <div>理財力 <span id="finance" class="font-mono font-bold">${user.finance}</span></div>
-                                <div class="col-span-2">毅力 <span id="perseverance" class="font-mono font-bold">${user.perseverance}</span></div>
+                            <div class="grid grid-cols-1 gap-3 text-base md:text-lg mt-6">
+                                <div>🎯 專注力 <span id="focus" class="font-mono font-bold">${user.focus}</span></div>
+                                <div>💪 體力 <span id="stamina" class="font-mono font-bold">${user.stamina}</span></div>
+                                <div>📚 知識 <span id="knowledge" class="font-mono font-bold">${user.knowledge}</span></div>
+                                <div>🤝 親和力 <span id="affinity" class="font-mono font-bold">${user.affinity}</span></div>
+                                <div>👥 社交力 <span id="social" class="font-mono font-bold">${user.social}</span></div>
+                                <div>💳 理財力 <span id="finance" class="font-mono font-bold">${user.finance}</span></div>
+                                <div>🎨 創造力 <span id="creativity" class="font-mono font-bold">${user.creativity}</span></div>
+                                <div>⚡ 行動力 <span id="action" class="font-mono font-bold">${user.action}</span></div>
+                                <div>🍀 幸運 <span id="luck" class="font-mono font-bold">${user.luck}</span></div>
+                                <div>✨ 魅力 <span id="charisma" class="font-mono font-bold">${user.charisma}</span></div>
+                                <div>🔄 適應力 <span id="adaptability" class="font-mono font-bold">${user.adaptability}</span></div>
+                                <div>📋 自律 <span id="discipline" class="font-mono font-bold">${user.discipline}</span></div>
+                                <div>💝 同理心 <span id="empathy" class="font-mono font-bold">${user.empathy}</span></div>
+                                <div>👑 領導力 <span id="leadership" class="font-mono font-bold">${user.leadership}</span></div>
+                                <div>💬 溝通力 <span id="communication" class="font-mono font-bold">${user.communication}</span></div>
+                                <div>🔧 解決力 <span id="problemSolving" class="font-mono font-bold">${user.problemSolving}</span></div>
+                                <div>💡 創新力 <span id="innovation" class="font-mono font-bold">${user.innovation}</span></div>
+                                <div>🏔️ 毅力 <span id="perseverance" class="font-mono font-bold">${user.perseverance}</span></div>
                             </div>
                         </div>
                     </div>
