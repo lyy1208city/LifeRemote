@@ -114,6 +114,13 @@ function clearRecord() {
     const user = window.userData;
     user.xp = 0;
     user.money = 0;
+    user.focus = 10;
+    user.stamina = 10;
+    user.knowledge = 10;
+    user.affinity = 10;
+    user.social = 10;
+    user.finance = 10;
+    user.perseverance = 10;
     window.saveUser();
     const xpDisplay = document.getElementById('xpDisplay');
     const moneyDisplay = document.getElementById('moneyDisplay');

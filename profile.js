@@ -30,6 +30,16 @@ function renderProfile() {
                                 <div>XP <span id="xp" class="font-mono font-bold">${user.xp}</span></div>
                                 <div>💰 <span id="money" class="font-mono font-bold">${user.money}</span></div>
                             </div>
+
+                            <div class="grid grid-cols-2 gap-3 text-base md:text-lg mt-6">
+                                <div>專注力 <span id="focus" class="font-mono font-bold">${user.focus}</span></div>
+                                <div>體力 <span id="stamina" class="font-mono font-bold">${user.stamina}</span></div>
+                                <div>知識 <span id="knowledge" class="font-mono font-bold">${user.knowledge}</span></div>
+                                <div>親和力 <span id="affinity" class="font-mono font-bold">${user.affinity}</span></div>
+                                <div>社交力 <span id="social" class="font-mono font-bold">${user.social}</span></div>
+                                <div>理財力 <span id="finance" class="font-mono font-bold">${user.finance}</span></div>
+                                <div class="col-span-2">毅力 <span id="perseverance" class="font-mono font-bold">${user.perseverance}</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -73,13 +83,16 @@ function showQR() {
 
         if (mode === 'company') {
             user.xp += 10;
-            showModal('🎉 你成功找到工作！', `+10 XP<br>目前 XP：${user.xp}`, '🧳');
+            user.social += 2;
+            showModal('🎉 你成功找到工作！', `+10 XP<br>目前 XP：${user.xp} <br> +2社交力<br>目前 社交力：${user.social}`, '🧳');
         } else if (mode === 'bank') {
             user.money += 200;
-            showModal('🏦 你成功存入 200！', `+200 元<br>目前存款：${user.money}`, '💰');
+            user.finance += 2;
+            showModal('🏦 你成功存入 200！', `+200 元<br>目前存款：${user.money} <br> 理財力<br>目前 理財力：${user.finance}`, '💰');
         } else if (mode === 'school') {
             user.xp += 5;
-            showModal('📚 你成功學習新技能！', `+5 XP<br>目前 XP：${user.xp}`, '🎓');
+            user.knowledge += 2;
+            showModal('📚 你成功學習新技能！', `+5 XP<br>目前 XP：${user.xp} <br> +2知識力<br>目前 知識力：${user.knowledge}`, '🎓');
         } else {
             showModal('📊 目前狀態', `XP：${user.xp}<br>存款：${user.money}`, '📈');
         }
